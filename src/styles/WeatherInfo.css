@@ -1,0 +1,12 @@
+body {
+    background-color: grey;
+}
+
+.weather-class {
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: white;
+    width: fit-content;
+}

@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arimo', sans-serif;
+}
+
+#landing-main-elements {
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+#landing-search-elements {
+    display: flex;
+    flex-direction: column;
+}
+
+#website-title {
+    font-size: 250%;
+    color:rgb(46, 24, 189);
+}
+
+#landing-form {
+    position: absolute;
+    font-size: 120%;
+    font-weight: 600;
+    color:rgb(0, 0, 0);
+}
+
+.landing-input {
+    margin-top: 10px;
+    border-radius: 20px;
+    border-style: none;
+    height: 2vw;
+    width: 20vw;
+}
+
+#video {
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    /* justify-content: center; */
+    /* align-items: center; */
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.685);
+    filter: saturate(1.5);
+}
