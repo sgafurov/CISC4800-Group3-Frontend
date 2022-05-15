@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
 .navbar {
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.190);
@@ -12,6 +18,7 @@
 }
 
 button {
+    font-family: 'Work Sans', sans-serif;
     background-color: #FAFBFC;
     border: 1px solid rgba(27, 31, 35, 0.15);
     border-radius: 6px;

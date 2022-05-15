@@ -19,7 +19,7 @@ export default function Landing() {
         <div className="landing">
             <Navbar/>
 
-            {/* <video src={backgroundVideo} autoPlay muted loop id='video' /> */}
+            <video src={backgroundVideo} autoPlay muted loop id='video' />
 
             <div id="landing-main-elements">
                 <h1 id="website-title">Current Conditions</h1>
@@ -30,7 +30,7 @@ export default function Landing() {
                             Enter zip code, city name, or address
                             <input type="text" name="address" className="landing-input" onChange={e => setAddress(e.target.value)} />
                         </label>
-                        <input type="submit" value="Submit" />
+                        <input id='submit-btn' type="submit" value="Submit" />
                     </form>
                 </div>
 

@@ -1,5 +1,99 @@
+body {
+    background-color: rgb(2, 27, 41);
+}
+
+form {
+    margin-top: 30px;
+}
+
 .login-form {
-    margin: 0 auto;
+    margin: 10px auto;
     width: fit-content;
     background-color: white;
+    padding: 20px 20px;
+    border-radius: 20px;
+}
+
+.login-header {
+    margin: 0 auto;
+}
+
+.login-form li {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+
+.login-form label {
+    margin: 0 0 3px 0;
+    padding: 0px;
+    display: block;
+    font-weight: bold;
+}
+
+.login-form input,
+textarea,
+select {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #BEBEBE;
+    padding: 7px;
+    margin: 0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+}
+
+.login-form input[type=text]:focus,
+.login-form input[type=date]:focus,
+.login-form input[type=datetime]:focus,
+.login-form input[type=number]:focus,
+.login-form input[type=search]:focus,
+.login-form input[type=time]:focus,
+.login-form input[type=url]:focus,
+.login-form input[type=email]:focus,
+.login-form textarea:focus,
+.login-form select:focus {
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+    box-shadow: 0 0 8px #88D5E9;
+    border: 1px solid #88D5E9;
+}
+
+.login-form .field-divided {
+    width: 49%;
+}
+
+.login-form .login-input {
+    width: 100%;
+}
+
+.login-form .field-select {
+    width: 100%;
+}
+
+.login-form .field-textarea {
+    height: 100px;
+}
+
+.login-form input[type=submit], .login-form input[type=button] {
+    background: #4B99AD;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+}
+
+.login-form input[type=submit]:hover, .login-form input[type=button]:hover {
+    background: #4691A4;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.login-form .required {
+    color: red;
 }

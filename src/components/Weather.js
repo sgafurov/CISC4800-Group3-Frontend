@@ -33,19 +33,20 @@ export default function Weather() {
     const fetchWeatherData = async () => {
         try {
             console.log(params.address)
+            console.log(MY_KEY)
             const resWeather = await fetch(`http://api.weatherapi.com/v1/current.json?key=${MY_KEY}&q=${params.address}&aqi=no`)
             const objWeather = await resWeather.json()
             setWeatherData(objWeather)
             console.log(objWeather)
-            // console.log(objWeather)
         } catch (error) {
             console.log(error)
+            alert( "No matching location found.")
         }
     }
 
     return (
         <>
-        <Navbar/>
+            <Navbar />
             {weatherData ?
                 <div className="weather-class">
                     <h1>{weatherData.location.name}, {weatherData.location.region}, {weatherData.location.country}</h1>
