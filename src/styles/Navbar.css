@@ -17,6 +17,10 @@ body {
     justify-content: space-between;
 }
 
+#register {
+    margin-left: 10px;
+}
+
 button {
     font-family: 'Work Sans', sans-serif;
     background-color: #FAFBFC;
