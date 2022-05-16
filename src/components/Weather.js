@@ -33,7 +33,6 @@ export default function Weather() {
     const fetchWeatherData = async () => {
         try {
             console.log(params.address)
-            console.log(MY_KEY)
             const resWeather = await fetch(`http://api.weatherapi.com/v1/current.json?key=${MY_KEY}&q=${params.address}&aqi=no`)
             const objWeather = await resWeather.json()
             setWeatherData(objWeather)
@@ -50,6 +49,7 @@ export default function Weather() {
             {weatherData ?
                 <div className="weather-class">
                     <h1>{weatherData.location.name}, {weatherData.location.region}, {weatherData.location.country}</h1>
+                    <h2>Current time {weatherData.location.localtime}</h2>
 
                     <form onClick={handleTempClick}>
                         <button name="Fahrenheit" onChange={e => { setTempF(true); setTempC(false) }}>Fahrenheit</button>
