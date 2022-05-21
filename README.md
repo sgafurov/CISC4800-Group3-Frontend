@@ -10,7 +10,7 @@ This project was created for course CISC 4800.
 
 ## Technologies
 
-React, Javascript, CSS, Fetch (API)
+React, Javascript, CSS, Fetch (API), Moment
 
 #
 
