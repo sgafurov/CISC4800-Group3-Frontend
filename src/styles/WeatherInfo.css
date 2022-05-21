@@ -13,7 +13,7 @@ button:hover {
     padding: 10px;
     border-radius: 15px;
     background-color: #fd9a80;
-    width: fit-content;
+    width: 790px;
 }
 
 .three-day-forecast {
@@ -22,5 +22,6 @@ button:hover {
     margin-bottom: 30px;
     padding: 10px;
     border-radius: 15px;
-    width: fit-content;
+    width: 800px;
+    /* width: fit-content; */
 }

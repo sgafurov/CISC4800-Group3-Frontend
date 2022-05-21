@@ -53,12 +53,20 @@ export default function ThreeDayForecast({ forecast }) {
                     return (
                         <div key={index} className='hourly-summary'>
                             <h3>{hour.time}</h3>
+
                             <img src={hour.condition.icon} />
                             <p>{hour.condition.text}</p>
-                            <h4>F</h4>
-                            <p>{hour.temp_f}</p>
-                            <h4>C</h4>
-                            <p>{hour.temp_c}</p>
+
+                            <div className="temp">
+                                <div className="temp-option">
+                                    <h3>F</h3>
+                                    <p>{hour.temp_f}</p>
+                                </div>
+                                <div className="temp-option">
+                                    <h3>C</h3>
+                                    <p>{hour.temp_c}</p>
+                                </div>
+                            </div>
                         </div>
                     )
                 }) : <></>}
@@ -70,12 +78,20 @@ export default function ThreeDayForecast({ forecast }) {
                     return (
                         <div key={index} className='hourly-summary'>
                             <h3>{hour.time}</h3>
+
                             <img src={hour.condition.icon} />
                             <p>{hour.condition.text}</p>
-                            <h4>F</h4>
-                            <p>{hour.temp_f}</p>
-                            <h4>C</h4>
-                            <p>{hour.temp_c}</p>
+
+                            <div className="temp">
+                                <div className="temp-option">
+                                    <h3>F</h3>
+                                    <p>{hour.temp_f}</p>
+                                </div>
+                                <div className="temp-option">
+                                    <h3>C</h3>
+                                    <p>{hour.temp_c}</p>
+                                </div>
+                            </div>
                         </div>
                     )
                 }) : <></>}
