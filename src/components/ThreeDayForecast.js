@@ -35,11 +35,11 @@ export default function ThreeDayForecast({ forecast }) {
                             <div className="temp">
                                 <div className="temp-option">
                                     <h3>F</h3>
-                                    <p>{hour.temp_f}</p>
+                                    <p>{hour.temp_f}°</p>
                                 </div>
                                 <div className="temp-option">
                                     <h3>C</h3>
-                                    <p>{hour.temp_c}</p>
+                                    <p>{hour.temp_c}°</p>
                                 </div>
                             </div>
                         </div>
@@ -60,11 +60,11 @@ export default function ThreeDayForecast({ forecast }) {
                             <div className="temp">
                                 <div className="temp-option">
                                     <h3>F</h3>
-                                    <p>{hour.temp_f}</p>
+                                    <p>{hour.temp_f}°</p>
                                 </div>
                                 <div className="temp-option">
                                     <h3>C</h3>
-                                    <p>{hour.temp_c}</p>
+                                    <p>{hour.temp_c}°</p>
                                 </div>
                             </div>
                         </div>
@@ -85,11 +85,11 @@ export default function ThreeDayForecast({ forecast }) {
                             <div className="temp">
                                 <div className="temp-option">
                                     <h3>F</h3>
-                                    <p>{hour.temp_f}</p>
+                                    <p>{hour.temp_f}°</p>
                                 </div>
                                 <div className="temp-option">
                                     <h3>C</h3>
-                                    <p>{hour.temp_c}</p>
+                                    <p>{hour.temp_c}°</p>
                                 </div>
                             </div>
                         </div>
