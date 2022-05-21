@@ -1,3 +1,19 @@
+# Current Conditions
+
+Shakhram Gafurov, David Weng, Samuel Demero, Mohammed Alam , Patrice Zoundi
+
+This project was created for course CISC 4800. 
+
+## Access the website 
+
+### `https://current-conditions.netlify.app`
+
+## Technologies
+
+React, Javascript, CSS, Fetch (API)
+
+#
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
