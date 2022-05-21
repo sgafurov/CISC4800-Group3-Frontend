@@ -1,0 +1,48 @@
+.forecasts {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+.hourly-summary {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: 0.75px solid black;
+}
+
+.daily-forecast {
+    margin: 0 auto;
+    background-color: white;
+    min-width: 700px;
+}
+
+.temp {
+    display: flex;
+    flex-direction: row;
+}
+
+.temp-option {
+    display: flex;
+    margin-left: 15px;
+}
+
+.forecasts img {
+    width: 30px;
+    height: 30px;
+    align-self: center;
+}
+
+.title {
+    border-bottom: 2px solid black;
+}
+
+.forecast-date {
+    margin: 0 auto;
+    padding: 10px 0px;
+    color: rgb(38, 121, 170);
+    border-bottom: 1px solid black;
+}

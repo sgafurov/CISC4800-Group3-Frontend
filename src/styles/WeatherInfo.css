@@ -1,12 +1,26 @@
-body {
+/* body {
     background-color: grey;
+} */
+
+button:hover {
+    background-color: rgb(209, 212, 245);
 }
 
-.weather-class {
+.current-conditions {
     margin: auto;
     margin-top: 30px;
+    margin-bottom: 30px;
     padding: 10px;
-    border-radius: 40px;
-    background-color: white;
+    border-radius: 15px;
+    background-color: #fd9a80;
+    width: fit-content;
+}
+
+.three-day-forecast {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 15px;
     width: fit-content;
 }
