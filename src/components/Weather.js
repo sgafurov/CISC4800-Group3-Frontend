@@ -36,7 +36,7 @@ export default function Weather() {
         try {
             console.log(params.address)
             // const resWeather = await fetch(`http://api.weatherapi.com/v1/current.json?key=${MY_KEY}&q=${params.address}&aqi=no`)
-            const resWeather = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${MY_KEY}&q=${params.address}&days=3&aqi=no&alerts=no`)
+            const resWeather = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${MY_KEY}&q=${params.address}&days=3&aqi=no&alerts=no`)
             const objWeather = await resWeather.json()
             setWeatherData(objWeather)
             setForecast(...forecast, objWeather.forecast.forecastday)
