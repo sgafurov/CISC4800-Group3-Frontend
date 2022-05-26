@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import "../styles/Login.css"
 import Navbar from './Navbar';
-import axios from 'axios';
 
 export default function Register() {
     let navigate = useNavigate()
@@ -16,7 +15,6 @@ export default function Register() {
         event.preventDefault()
         try {
             //`http://localhost:8080/register`
-            //await fetch(`https://cisc4800-weather-app.herokuapp.com/register`
             const result = await fetch(`https://cisc4800-weather-app.herokuapp.com/register`, {
                 method: 'POST',
                 mode: 'cors',

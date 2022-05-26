@@ -5,6 +5,7 @@ import "../styles/Login.css"
 import Navbar from './Navbar';
 
 export default function Login() {
+    let navigate = useNavigate()
 
     const [loginData, setLoginData] = useState({
         username: "",
@@ -23,21 +24,23 @@ export default function Login() {
     const fetchUser = async (e) => {
         e.preventDefault()
         try {
-            const result = await fetch(`http://localhost:8080/${loginData.username}`, {
-                method: 'GET',
+            const res = await fetch(`https://cisc4800-weather-app.herokuapp.com/login`, {
+                method: 'POST',
                 mode: 'cors',
                 headers: {
                     'Content-Type': 'application/json'
                 },
+                body: JSON.stringify(loginData) //login data is currently a JS object. so you have to send it as JSON object
             });
-            const resObject = await result.json()
-            console.log('line 34 of login', resObject)
+            const resObject = await res.json()
+            console.log('line 35 of login', resObject)
             if (resObject.status == 400) {
                 throw resObject
             }
+            navigate('/dashboard', { state: { username: loginData.username } })
             alert('Success')
         } catch (err) {
-            console.log('line 50 of register error', err)
+            console.log('line 41 of register error', err)
             if (err.status == 400) {
                 alert(err.message)
             }
