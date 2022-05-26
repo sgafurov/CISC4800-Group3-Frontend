@@ -38,7 +38,6 @@ export default function Login() {
                 throw resObject
             }
             navigate('/dashboard', { state: { username: loginData.username } })
-            alert('Success')
         } catch (err) {
             console.log('line 41 of register error', err)
             if (err.status == 400) {
