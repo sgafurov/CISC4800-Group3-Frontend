@@ -54,7 +54,7 @@ export default function CitiesList() {
     }
 
     return (
-        <div className="List">
+        <div className="list">
             <h1 className="list-title">My Cities</h1>
 
             <form onSubmit={add} className='list-form'>

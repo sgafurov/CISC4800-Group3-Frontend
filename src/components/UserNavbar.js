@@ -11,7 +11,7 @@ export default function UserNavbar() {
     }
 
     const logoutUser = () => {
-        //
+        localStorage.removeItem('token-info')
     }
 
     return (
